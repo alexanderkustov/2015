@@ -9,15 +9,17 @@ $blue: #4183C4;
 // Grays
 $black: #000;
 $darkerGray: #222;
-$darkGray: #333;
+$darkGray: rgba(0,0,0,0.8);
 $gray: #666;
 $lightGray: #eee;
 $white: #fff;
 
 // Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
+@import url(http://fonts.googleapis.com/css?family=Neuton:300,400,700,400italic);
+
+$helvetica: 'Neuton', Helvetica, Arial, sans-serif;
+$helveticaNeue: 'Neuton', "Helvetica Neue", Helvetica, Arial, sans-serif;
+$georgia: 'Neuton', Georgia, serif;
 
 // Mobile breakpoints
 @mixin mobile {

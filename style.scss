@@ -7,6 +7,7 @@
 
 @import "reset";
 @import "variables";
+
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -21,6 +22,11 @@ body {
 	background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
+  letter-spacing: .01rem;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on;
 }
 
 .container {
@@ -66,6 +72,7 @@ h4 {
 
 p {
   margin: 15px 0;
+  font-size: 20px;
 }
 
 a {
