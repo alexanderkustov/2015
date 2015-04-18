@@ -1,19 +1,13 @@
-#.travis.yml
-
 language: ruby
 rvm:
 - 2.1
+script: ./script/cibuild
 
 # branch whitelist
 branches:
   only:
-  - master
-
-before_script:
- - chmod +x cibuild.sh
-
-script: ./cibuild.sh
+  - master    # test the gh-pages branch
 
 env:
   global:
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer“
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
