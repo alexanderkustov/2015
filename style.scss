@@ -7,6 +7,7 @@
 
 @import "reset";
 @import "variables";
+@import "skeleton";
 
 // Syntax highlighting @import is at the bottom of this file
 
@@ -29,9 +30,17 @@ body {
   -moz-font-feature-settings: "liga" on;
 }
 
+#strip
+{
+  width: 100%;
+  height: 8px;
+  padding: 0px;
+  margin: 0px;
+}
+
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 1240px;
   padding: 0 10px;
   width: 100%;
 }
@@ -115,6 +124,7 @@ strong, b {
 
 img {
   max-width: 100%;
+ 
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -244,9 +254,19 @@ nav {
   }
 }
 
+
+
 //
 // .main
 //
+
+.mt20{
+  margin-top: 20px;
+}
+
+.text-center{
+  text-align: center;
+}
 
 .posts > .post {
   padding-bottom: 2em;
@@ -280,9 +300,11 @@ nav {
 
 .wrapper-footer {
   margin-top: 50px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
-  background-color: $lightGray;
+  background:  $lightGray url('assets/map-footer.png') center top no-repeat;
 }
 
 footer {

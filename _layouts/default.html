@@ -8,14 +8,12 @@
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
   <body>
+    <div id="strip"></div>
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
@@ -27,12 +25,75 @@
           </div>
 
           <nav>
+            <a href="{{ site.baseurl }}/work">Work</a>
             <a href="{{ site.baseurl }}/">Blog</a>
             <a href="{{ site.baseurl }}/about">About</a>
+            <a href="{{ site.baseurl }}/contact">Contact</a>
           </nav>
         </header>
       </div>
     </div>
+
+<div class="container gallery">
+  <div class="row">
+    <div class="six columns">
+      <img src="images/work-size.jpg" class="u-max-full-width" alt="Kia Sorento Digital Mag">
+    </div>
+    <div class="six columns">
+      <div class="row">
+        <div class="six columns">
+          <img src="images/work-size.jpg" class="u-max-full-width" alt="ICT2014">
+        </div>
+        <div class="six columns">
+          <img src="images/work-size.jpg" class="u-max-full-width" alt="EA Advsiroy">
+        </div>
+      </div>
+      <div class="row">
+        <div class="six columns">
+          <img src="images/work-size.jpg" class="u-max-full-width" alt="Ride Republic">
+        </div>
+        <div class="six columns">
+          <img src="images/work-size.jpg" class="u-max-full-width" alt="Madrid Flamenco">
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="row">
+   
+    <div class="six columns">
+      <div class="row">
+        <div class="six columns">
+          <img src="images/work-size.jpg" class="u-max-full-width" alt="Livros de Ontem">
+        </div>
+        <div class="six columns">
+          <img src="images/work-size.jpg" class="u-max-full-width" alt="WESO">
+        </div>
+      </div>
+      <div class="row">
+        <div class="six columns">
+          <img src="images/work-size.jpg" class="u-max-full-width" alt="vodafone labs lisboa">
+        </div>
+        <div class="six columns">
+          <img src="images/work-size.jpg" class="u-max-full-width" alt="easylivros">
+        </div>
+      </div>
+    </div>
+     <div class="six columns">
+      <img src="images/work-size.jpg" class="u-max-full-width" alt="records per month">
+    </div>
+  </div>
+  <div class="row">
+    <div class="four columns">
+     <br>
+    </div>
+     <div class="four columns mt20 text-center">
+      <a class="button" href="#">More Work</a>
+    </div>
+     <div class="four columns">
+     <br>
+    </div>
+  </div>
+</div>
 
     <div id="main" role="main" class="container">
       {{ content }}
@@ -47,5 +108,7 @@
     </div>
 
     {% include analytics.html %}
+    {% include scripts.html %}
+    
   </body>
 </html>
