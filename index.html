@@ -4,23 +4,58 @@ layout: default
 <div class="container gallery">
   <div class="row">
     <div class="six columns">
+    <figure class="effect-duke">
       <img src="images/work-size.jpg" class="u-max-full-width" alt="Kia Sorento Digital Mag">
+      <figcaption>
+          
+          <p>Duke is very bored. When he looks at the sky, he feels to run.</p>
+          <a href="#">View more</a>
+        </figcaption>      
+      </figure>
     </div>
     <div class="six columns">
       <div class="row">
         <div class="six columns">
+           <figure class="effect-blue">
           <img src="images/ride-republic.png" class="u-max-full-width" alt="Ride Republic">
+      <figcaption>
+          
+          <p>Duke is very bored. When he looks at the sky, he feels to run.</p>
+          <a href="#">View more</a>
+        </figcaption>      
+      </figure>
         </div>
         <div class="six columns">
+         <figure class="effect-green">
           <img src="images/ey.png" class="u-max-full-width" alt="EA Advsiroy">
+      <figcaption>
+          
+          <p>Duke is very bored. When he looks at the sky, he feels to run.</p>
+          <a href="#">View more</a>
+        </figcaption>      
+      </figure>
         </div>
       </div>
       <div class="row">
         <div class="six columns">
+          <figure class="effect-red">
           <img src="images/ict-2014.png" class="u-max-full-width" alt="ICT2014">
+      <figcaption>
+          
+          <p>Duke is very bored. When he looks at the sky, he feels to run.</p>
+          <a href="#">View more</a>
+        </figcaption>      
+      </figure>
         </div>
         <div class="six columns">
+          <figure class="effect-duke">
           <img src="images/madrid-flamenco.png" class="u-max-full-width" alt="Madrid Flamenco">
+      <figcaption>
+          
+          <p>Duke is very bored. When he looks at the sky, he feels to run.</p>
+          <a href="#">View more</a>
+        </figcaption>      
+      </figure>
         </div>
       </div>
     </div>
@@ -52,3 +87,10 @@ layout: default
 		</article>
 	{% endfor %}
 </div>
+
+<script>
+      // For Demo purposes only (show hover effect on mobile devices)
+      [].slice.call( document.querySelectorAll('a[href="#"') ).forEach( function(el) {
+        el.addEventListener( 'click', function(ev) { ev.preventDefault(); } );
+      } );
+    </script>
