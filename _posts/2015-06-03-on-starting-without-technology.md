@@ -2,11 +2,10 @@
 layout: post
 title: On starting without Technology
 subtitle: or how everyone tries to recruit me into being their CTO
-image: "images/404.jpg"
+image: "images/london-t.jpg"
 ---
 
 Every week, I get these fantastic e-mails from someone new and full of passion.
-
 They come through LinkedIn, F6S, Dreamstake or any other startup friendly service. Saying hey I need you on my team to build this awesome product. This platform will be great as long as you develop it with us or this mobile app is so revolutionary but your expertise is needed for it to start…
 
 I know you are passionate about your new idea, but the first question I ask, or everyone asks, when seeing something new: What’s in it for me?

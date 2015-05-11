@@ -279,6 +279,17 @@ nav {
 }
 
 .post {
+  margin: 0 auto !important;
+  float: inherit !important;
+  
+  p{
+  letter-spacing: .01rem;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 1.5;
+  }
+
   blockquote {
     margin: 1.8em .8em;
     border-left: 2px solid $gray;
@@ -311,6 +322,16 @@ footer {
   padding: 20px 0;
   text-align: center;
 }
+@media (min-width: 550px){
+.gallery .columns{
+  margin-left:0%;
+}
+
+.gallery .six.columns {
+  width: 50%;
+}
+}
+
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start

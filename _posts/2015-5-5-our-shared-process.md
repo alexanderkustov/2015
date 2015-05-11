@@ -2,7 +2,7 @@
 layout: post
 title: Our Shared Process
 subtitle: or How to Co-Create your Startup by Outsourcing it
-image: "images/jekyll-now-theme-screenshot.jpg"
+image: "images/brighton-t.jpg"
 
 ---
 
