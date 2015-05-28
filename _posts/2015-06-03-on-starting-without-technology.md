@@ -3,6 +3,8 @@ layout: post
 title: On starting without Technology
 subtitle: or how everyone tries to recruit me into being their CTO
 image: "images/london-t.jpg"
+medium: "https://medium.com/inspiring-notes/on-starting-without-technology-b31d08a3852c"
+color: "#9B59B6"
 ---
 
 Every week, I get these fantastic e-mails from someone new and full of passion.

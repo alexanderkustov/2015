@@ -8,7 +8,7 @@ layout: default
       <img src="images/work-size.jpg" class="u-max-full-width" alt="Kia Sorento Digital Mag">
       <figcaption>
           
-          <p>Duke is very bored. When he looks at the sky, he feels to run.</p>
+          <p>Description will come, as the rest of the information.</p>
           <a href="#">View more</a>
         </figcaption>      
       </figure>
@@ -20,7 +20,7 @@ layout: default
           <img src="images/ride-republic.png" class="u-max-full-width" alt="Ride Republic">
       <figcaption>
           
-          <p>Duke is very bored. When he looks at the sky, he feels to run.</p>
+          <p>Description will come, as the rest of the information.</p>
           <a href="#">View more</a>
         </figcaption>      
       </figure>
@@ -30,7 +30,7 @@ layout: default
           <img src="images/ey.png" class="u-max-full-width" alt="EA Advsiroy">
       <figcaption>
           
-          <p>Duke is very bored. When he looks at the sky, he feels to run.</p>
+          <p>Description will come, as the rest of the information.</p>
           <a href="#">View more</a>
         </figcaption>      
       </figure>
@@ -42,7 +42,7 @@ layout: default
           <img src="images/ict-2014.png" class="u-max-full-width" alt="ICT2014">
       <figcaption>
           
-          <p>Duke is very bored. When he looks at the sky, he feels to run.</p>
+          <p>Description will come, as the rest of the information.</p>
           <a href="#">View more</a>
         </figcaption>      
       </figure>
@@ -52,7 +52,7 @@ layout: default
           <img src="images/madrid-flamenco.png" class="u-max-full-width" alt="Madrid Flamenco">
       <figcaption>
           
-          <p>Duke is very bored. When he looks at the sky, he feels to run.</p>
+          <p>Description will come, as the rest of the information.</p>
           <a href="#">View more</a>
         </figcaption>      
       </figure>
@@ -69,21 +69,29 @@ layout: default
     
   </div>
 </div>
+
+
 <div class="posts mt20">
+  <div class="row">
+    <div class="twelve columns" style="text-align: center;">
+      <h1> My Humble Writings</h1>
+    </div>
+  </div>
 	{% for post in site.posts %}
 		<article class="post row">
-			<div class="four columns">
-				<a href="{{ site.baseurl }}{{ post.url }}">
-					<img src="{{ site.baseurl }}{{ post.image }}" alt="{{ post.title }}" class="u-max-full-width">
-				</a>
-			</div>
-			<div class="eight columns">
-				<h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <div class="two columns">
+      <br>
+      </div>
+      <div class="three columns ">
+              <h1><a href="{{ post.medium }}" style="color: {{ post.color }}">{{ post.title }}</a></h1>
+      </div>
+      <div class="five columns">
 				<div class="entry">
-					{{ post.excerpt }}
+					{{ post.content | truncatewords:45}}
 				</div>
-				<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+				<a href="{{ post.medium }}" class="read-more">Read More on Medium &rarr;</a>
 			</div>
+
 		</article>
 	{% endfor %}
 </div>
@@ -93,4 +101,4 @@ layout: default
       [].slice.call( document.querySelectorAll('a[href="#"') ).forEach( function(el) {
         el.addEventListener( 'click', function(ev) { ev.preventDefault(); } );
       } );
-    </script>
+</script>

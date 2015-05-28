@@ -3,7 +3,8 @@ layout: post
 title: Our Shared Process
 subtitle: or How to Co-Create your Startup by Outsourcing it
 image: "images/brighton-t.jpg"
-
+medium: "https://medium.com/inspiring-notes/our-shared-process-99ec03772af"
+color: "#446CB3"
 ---
 
 At Inspiring we have this way to contribute into the tech startup world with a little process we call Shared-Risk Development. It’s absolutely the same as any type of development and consulting with all the design services included, but the only difference is that we don't take money from the start, but only participate in the success of your idea.

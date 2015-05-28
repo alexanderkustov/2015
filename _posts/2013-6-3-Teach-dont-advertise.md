@@ -3,6 +3,8 @@ layout: post
 title: Teach. Don’t advertise
 subtitle: My notes on “Rework” by Jason Fried & David Hansson
 image: "images/desk-t.jpg"
+medium: "https://medium.com/inspiring-notes/teach-dont-advertise-3716fd243b55"
+color: "#26A65B"
 ---
 
 When you think about it, our culture has definitely shifted into a chaotic structure that on a logical level just doesn't work. It’s just considered normal by the standards of the “industry” to co-create a workaholic environment by praising everyone who can sacrifice his own life for work, measuring quantity not quality… measuring time spent in the office and not time doing actual work.
