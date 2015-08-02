@@ -16,6 +16,7 @@ $font_0: sans-serif;
   left: 0;
   width: 100%;
   height: 100%;
+  margin: 0 auto;
 }
 
 %extend_2 {
@@ -24,26 +25,23 @@ img {
   }
   p {
     transition: opacity 0.35s, transform 0.35s;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin: 20px;
+    
+    margin: 20px auto;
+    width: 100%;
     padding: 30px;
     border: 2px solid $white;
     text-transform: none;
-    font-size: 90%;
+    font-size: 100%;
     opacity: 0;
-    transform: scale3d(0.8,0.8,1);
-    transform-origin: 50% -100%;
   }
   &:hover {
     img {
       opacity: 0.1;
-      transform: scale3d(2,2,1);
+     
     }
     p {
       opacity: 1;
-      transform: scale3d(1,1,1);
+      
     }
   } 
 }
