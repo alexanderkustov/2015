@@ -3,10 +3,10 @@ layout: default
 ---
 <div class="about row">
   <div class="col-md-10 col-md-offset-1" style="text-align: center;">
-      <h1> Alexander Kustov is a full stack web developer based in London, UK.</h1>
-      <p>I work best at planning the architecture of web applications and early startups requirements. Having done work for amazing brands like Kia, Saatchi &amp; Saatchi, Google, EY, Vue, Vodafone and a lot of small and focused teams building their dream...</p>
-      <a href="" class="btn-rnd mt20">Get in Touch</a>
-    </div>
+    <h1> Alexander Kustov is a full stack web developer based in London, UK.</h1>
+    <p>I work best at planning the architecture of web applications and early startups requirements. Having done work for amazing brands like Kia, Saatchi &amp; Saatchi, Google, EY, Vue, Vodafone and a lot of small and focused teams building their dream...</p>
+    <a href="" class="btn-rnd mt20">Get in Touch</a>
+  </div>
 </div>
 <div class="container gallery mt20">
   <div class="row">
@@ -15,54 +15,74 @@ layout: default
     </div>
   </div>
   <div class="row text-center">
-    <div class="col-md-3 col-xs-6">
+    <div class="col-md-4 col-xs-6">
       <figure class="effect-duke">
         <img src="images/work-size.jpg" class="u-max-full-width" alt="Kia Sorento Digital Mag">
         <figcaption>
-        <p>Kia Digital Magazine Design &amp; Development</p>
-        <a href="http://kiasorentomag.co.uk/">View more</a>
+          <p>Kia Digital Magazine Design &amp; Development</p>
+          <a href="http://kiasorentomag.co.uk/">View more</a>
         </figcaption>
       </figure>
       <h3>Kia Digital Mag</h3>
     </div>
-    <div class="col-md-3 col-xs-6">
+    <div class="col-md-4 col-xs-6">
       <figure class="effect-blue">
         <img src="images/ride-republic.png" class="u-max-full-width" alt="Ride Republic">
         <figcaption>
-        <p>Ride Republic - Spincycle Gym Booking System, Gym Management and Personal Tracking App Solution</p>
-        <a href="http://kiasorentomag.co.uk/">View more</a>
+          <p>Ride Republic - Gym Management and Personal Tracking App Solution</p>
+          <a href="http://kiasorentomag.co.uk/">View more</a>
         </figcaption>
       </figure>
       <h3>Ride Republic</h3>
     </div>
-    <div class="col-md-3 col-xs-6">
+    <div class="col-md-4 col-xs-6">
       <figure class="effect-green">
         <img src="images/ey.png" class="u-max-full-width" alt="EA Advsiroy">
         <figcaption>
-        <p>EY Advsiory iPad App</p>
-        <a href="#">View more</a>
+          <p>EY Advsiory iPad App</p>
+          <a href="#">View more</a>
         </figcaption>
       </figure>
       <h3>EY Advisory App</h3>
     </div>
-    <div class="col-md-3 col-xs-6">
+    <div class="col-md-4 col-xs-6">
       <figure class="effect-red">
-        <img src="images/ict-2014.png" class="u-max-full-width" alt="ICT2014">
+        <img src="images/madrid-flamenco.png" class="u-max-full-width" alt="EA Advsiroy">
         <figcaption>
-        <p>Description will come, as the rest of the information.</p>
-        <a href="#">View more</a>
+          <p>Madrid Flamenco - Restaurant Booking Platform</p>
+          <a href="#">View more</a>
         </figcaption>
       </figure>
-      <h3>View More &rarr;</h3>
+      <h3>Madrid Flamenco</h3>
+    </div>
+    <div class="col-md-4 col-xs-6">
+      <figure class="effect-duke">
+        <img src="images/ict-2014.png" class="u-max-full-width" alt="ICT2014">
+        <figcaption>
+          <p>ICT2014 - Conference and Booking System</p>
+          <a href="#">View more</a>
+        </figcaption>
+      </figure>
+      <h3>ICT2014</h3>
+    </div>
+    <div class="col-md-4 col-xs-6">
+      <figure class="effect-green">
+        <img src="images/desk-t.jpg" class="u-max-full-width" alt="EA Advsiroy">
+        <figcaption>
+          <p>Your Project Is Next</p>
+          <a href="#">View more</a>
+        </figcaption>
+      </figure>
+      <h3>More to Come...</h3>
     </div>
   </div>
 
   <!-- <div class="row">
-    
+
     <div class="col-md-8 col-md-offset-2 mt20" style="text-align: center; background: #FFEB00; color:#454039; font-weight: light; font-style: italic;">
       <p>Site under construction, be considerate of lack of description of projects, just mail me for more info.</p>
     </div>
-    
+
   </div> -->
 </div>
 <div class="posts mt20">
@@ -72,25 +92,25 @@ layout: default
     </div>
   </div>
   {% for post in site.posts %}
-    <article class="post row">
-      <div class="col-md-2">
-        <br>
+  <article class="post row">
+    <div class="col-md-2">
+      <br>
+    </div>
+    <div class="col-md-3 ">
+      <h1><a href="{{ post.medium }}" style="color: {{ post.color }}">{{ post.title }}</a></h1>
+    </div>
+    <div class="col-md-5">
+      <div class="entry">
+        {{ post.content | truncatewords:45}}
       </div>
-      <div class="col-md-3 ">
-        <h1><a href="{{ post.medium }}" style="color: {{ post.color }}">{{ post.title }}</a></h1>
-      </div>
-      <div class="col-md-5">
-        <div class="entry">
-          {{ post.content | truncatewords:45}}
-        </div>
-        <a href="{{ post.medium }}" class="read-more">Read More on Medium &rarr;</a>
-      </div>
-    </article>
+      <a href="{{ post.medium }}" class="read-more">Read More on Medium &rarr;</a>
+    </div>
+  </article>
   {% endfor %}
 </div>
 <script>
 // For Demo purposes only (show hover effect on mobile devices)
 [].slice.call( document.querySelectorAll('a[href="#"') ).forEach( function(el) {
-el.addEventListener( 'click', function(ev) { ev.preventDefault(); } );
+  el.addEventListener( 'click', function(ev) { ev.preventDefault(); } );
 } );
 </script>
